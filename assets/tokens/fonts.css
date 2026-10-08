@@ -1,0 +1,12 @@
+:root {
+  --font-display: "Instrument Sans", system-ui, sans-serif;
+  --font-display-weight: 500;
+  --font-display-tracking: -0.010em;
+  --font-text: "Newsreader", Georgia, 'Times New Roman', serif;
+  --font-text-weight: 400;
+  --font-text-tracking: 0.000em;
+  --font-text-variation: "opsz" 18;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-mono-weight: 400;
+  --font-mono-tracking: 0.000em;
+}

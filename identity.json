@@ -1,0 +1,382 @@
+{
+  "schema": "brand-identity/identity@1",
+  "brand": {
+    "name": "Notees",
+    "tagline": "Everything is a node.",
+    "languages": [
+      "en"
+    ],
+    "numbers": true,
+    "doc_lang": "en",
+    "sector": "Personal knowledge management software",
+    "copy": {
+      "sentence": {
+        "en": "Every page, block, and link is a node in one graph — and the operation log is the only authority."
+      },
+      "nav": [
+        "Recents",
+        "Favorites",
+        "Daily Note",
+        "Settings"
+      ],
+      "cta": "New page"
+    }
+  },
+  "components": {
+    "logo": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "type": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    },
+    "palette": {
+      "mode": "new",
+      "status": "proposed",
+      "source": null,
+      "sha256": null
+    }
+  },
+  "palette": "palette.json",
+  "set": {
+    "id": "E",
+    "name": "Margin Green",
+    "recommended": true,
+    "mechanism": "The page is the canvas and the margin is where thought accumulates: one permanent rule in ink is the coordinate, and small green annotations appear where something new lands — Newsreader for the words, Instrument Sans for the chrome, warm paper for both. The margin is permanent; the green mark is the act of adding.",
+    "expression_move": "The green annotation tick is transient — it appears where thought lands; the margin never moves.",
+    "differs_by": "The measured shelf is cool or achromatic tools; nobody owns an editorial margin system where permanent structure and the act of adding are two colours."
+  },
+  "axes": {
+    "warm_cool": -1,
+    "classic_contemporary": 0,
+    "quiet_loud": 0,
+    "premium_accessible": -1
+  },
+  "card": {
+    "ground": "light"
+  },
+  "type": {
+    "pairing_mode": "contrast",
+    "display": {
+      "family": "Instrument Sans",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        500,
+        600,
+        700
+      ],
+      "location": {
+        "wght": 600
+      },
+      "features": [],
+      "case": "as-is",
+      "tracking": -10,
+      "fallback": "system-ui, sans-serif",
+      "file": null
+    },
+    "text": {
+      "family": "Newsreader",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        400,
+        500
+      ],
+      "location": {
+        "wght": 400,
+        "opsz": 18
+      },
+      "features": [
+        "tnum"
+      ],
+      "case": "as-is",
+      "tracking": 0,
+      "fallback": "Georgia, 'Times New Roman', serif",
+      "file": null
+    },
+    "mono": {
+      "family": "JetBrains Mono",
+      "source": "google",
+      "license": "OFL-1.1",
+      "weights": [
+        400,
+        500
+      ],
+      "location": {
+        "wght": 400
+      },
+      "features": [
+        "tnum"
+      ],
+      "case": "as-is",
+      "tracking": 0,
+      "fallback": "ui-monospace, SFMono-Regular, Menlo, monospace",
+      "file": null
+    }
+  },
+  "logo": {
+    "type": "symbol+wordmark",
+    "concept": "The margin rule with three annotations: a coordinate, not a container — the place where the reading and the thinking happen.",
+    "symbol": "logo/symbol.svg",
+    "wordmark": {
+      "text": "Notees",
+      "role": "display",
+      "location": null,
+      "tracking": -10,
+      "case": "as-is"
+    },
+    "monogram": null,
+    "lockups": [
+      "horizontal",
+      "stacked"
+    ],
+    "colors": {
+      "margin": "text",
+      "note-1": "accent",
+      "note-2": "accent",
+      "note-3": "accent",
+      "wordmark": "text"
+    },
+    "tags": [
+      "abstract-geometric"
+    ],
+    "clear_space": {
+      "unit": "cap-height",
+      "multiple": 1,
+      "inferred": true
+    },
+    "min_size": {
+      "px": 16,
+      "mm": 6
+    },
+    "misuse": [
+      {
+        "svg": "logo/misuse-1.svg",
+        "label": "Annotations live in the margin — never off the page"
+      },
+      {
+        "svg": "logo/misuse-2.svg",
+        "label": "The margin is vertical — never lay the rule down as a divider"
+      },
+      {
+        "do": "stretch"
+      },
+      {
+        "do": "recolour"
+      },
+      {
+        "do": "rearrange"
+      }
+    ]
+  },
+  "palette_build": {
+    "strategy": "mono",
+    "accent": "#2e5e46",
+    "light_bg": "#f7f4ec",
+    "dark_bg": "#161412",
+    "neutral_tint": null,
+    "neutral_chroma": 0.018,
+    "extra": []
+  },
+  "defaults_used": [
+    {
+      "id": "cream-ground",
+      "why": "The warm-paper ground is the product's existing equity (#f5f3ef in variables.css); the margin device and the green annotation, not the ground, carry the distinction."
+    }
+  ],
+  "rationale": [
+    {
+      "claim": "The measured competitor shelf is cool or achromatic; nobody owns warm paper with an editorial annotation voice.",
+      "evidence": "measured",
+      "source": "site/competitors.json extract, 2026-10-07"
+    },
+    {
+      "claim": "Advance Green is measured outside every AI-default colour region and carries the arrival semantics from the Record direction: green marks what just landed, ink is permanent.",
+      "evidence": "measured",
+      "source": "palette audit, 2026-10-07"
+    },
+    {
+      "claim": "Newsreader carries long-form reading at text sizes with tabular figures; Instrument Sans keeps the chrome contemporary — the editorial-software hybrid the brief asks for.",
+      "evidence": "practice",
+      "source": "references/type.md class-to-voice vocabulary"
+    },
+    {
+      "claim": "Owner synthesis 2026-10-07: margin = structure, green = the act of adding; two colours, one permanent and one transient.",
+      "evidence": "judgement",
+      "source": "owner review 2026-10-07"
+    }
+  ],
+  "audit": {
+    "schema": "brand-identity/audit@1",
+    "passed": true,
+    "counts": {
+      "gate": 0,
+      "warn": 2,
+      "info": 10
+    },
+    "findings": [
+      {
+        "id": "palette.contrast.light.border-on-background",
+        "component": "palette",
+        "severity": "info",
+        "measured": 1.36,
+        "threshold": 3.0,
+        "message": "light: border #d8d3c7 on background #f7f4ec is 1.36:1, below 3.0:1 (borders: dividers are exempt, input outlines need 3:1; WCAG 2, no rounding)",
+        "suggested_fix": {
+          "change": "modes.light.border",
+          "from": "#d8d3c7",
+          "to": "#918d81",
+          "how": "darken by OKLCH L -0.22, same hue",
+          "ratio_after": 3.02
+        },
+        "roles": [
+          "light.border",
+          "light.background"
+        ]
+      },
+      {
+        "id": "palette.contrast.dark.link-on-text",
+        "component": "palette",
+        "severity": "info",
+        "measured": 2.51,
+        "threshold": 3.0,
+        "message": "dark: link #6da789 on text #f4f3f1 is 2.51:1, below 3.0:1 (underline links in dark mode (WCAG G183: without underline a link needs 3:1 against body text); WCAG 2, no rounding)",
+        "suggested_fix": {
+          "change": "modes.dark.link",
+          "from": "#6da789",
+          "to": "#518a6d",
+          "how": "use primary-600 (same scale)",
+          "ratio_after": 3.64
+        },
+        "roles": [
+          "dark.link",
+          "dark.text"
+        ]
+      },
+      {
+        "id": "palette.contrast.dark.border-on-background",
+        "component": "palette",
+        "severity": "info",
+        "measured": 1.79,
+        "threshold": 3.0,
+        "message": "dark: border #483f37 on background #161412 is 1.79:1, below 3.0:1 (borders: dividers are exempt, input outlines need 3:1; WCAG 2, no rounding)",
+        "suggested_fix": {
+          "change": "modes.dark.border",
+          "from": "#483f37",
+          "to": "#79726a",
+          "how": "use neutral-500 (same scale)",
+          "ratio_after": 3.87
+        },
+        "roles": [
+          "dark.border",
+          "dark.background"
+        ]
+      },
+      {
+        "id": "type.display.coverage.en_Latn.extended",
+        "component": "type",
+        "severity": "info",
+        "measured": "95/102",
+        "threshold": "100% auxiliary + punctuation",
+        "message": "Instrument Sans lacks English auxiliary/punctuation characters: Ĕ Ĭ Ŏ ĕ ĭ ŏ ʻ",
+        "suggested_fix": "fine if the brand never writes them (loanwords, names); else another family"
+      },
+      {
+        "id": "type.display.confusables",
+        "component": "type",
+        "severity": "info",
+        "measured": 0.974,
+        "threshold": "0.9 (heuristic, uncalibrated)",
+        "message": "Instrument Sans: I/l look alike at small sizes (IoU 0.97 at 48 px)",
+        "suggested_fix": "try ss01 'Round dots', ss02 'Single Story a', ss03 'Alternate y', ss04 'Alternate K'"
+      },
+      {
+        "id": "type.display.web-weight",
+        "component": "type",
+        "severity": "info",
+        "measured": 64,
+        "threshold": null,
+        "message": "Instrument Sans: ~64 KB WOFF2 for the brief's characters (one variable file, all weights; estimate)",
+        "suggested_fix": null
+      },
+      {
+        "id": "type.text.coverage.en_Latn.extended",
+        "component": "type",
+        "severity": "info",
+        "measured": "101/102",
+        "threshold": "100% auxiliary + punctuation",
+        "message": "Newsreader lacks English auxiliary/punctuation characters: ʻ",
+        "suggested_fix": "fine if the brand never writes them (loanwords, names); else another family"
+      },
+      {
+        "id": "type.text.web-weight",
+        "component": "type",
+        "severity": "info",
+        "measured": 105,
+        "threshold": null,
+        "message": "Newsreader: ~105 KB WOFF2 for the brief's characters (one variable file, all weights; estimate)",
+        "suggested_fix": null
+      },
+      {
+        "id": "type.mono.coverage.en_Latn.extended",
+        "component": "type",
+        "severity": "info",
+        "measured": "101/102",
+        "threshold": "100% auxiliary + punctuation",
+        "message": "JetBrains Mono lacks English auxiliary/punctuation characters: ʻ",
+        "suggested_fix": "fine if the brand never writes them (loanwords, names); else another family"
+      },
+      {
+        "id": "type.mono.web-weight",
+        "component": "type",
+        "severity": "info",
+        "measured": 36,
+        "threshold": null,
+        "message": "JetBrains Mono: ~36 KB WOFF2 for the brief's characters (one variable file, all weights; estimate)",
+        "suggested_fix": null
+      },
+      {
+        "id": "cohesion.competitor-colour",
+        "component": "cohesion",
+        "severity": "warn",
+        "measured": 5.1,
+        "threshold": 10,
+        "message": "Iron Ink #1c1a16 is ΔE2000 5.1 from capacities.io's primary #1a1a1d",
+        "suggested_fix": "move lightness or hue until ΔE2000 >= 10, or say why sharing it is deliberate"
+      },
+      {
+        "id": "cohesion.sets-close",
+        "component": "cohesion",
+        "severity": "warn",
+        "measured": [
+          "D–E"
+        ],
+        "threshold": "2 axes, 2 steps",
+        "message": "sets too alike on the axes: D–E differ by 2+ steps on fewer than 2 axes (heuristic)",
+        "suggested_fix": null
+      }
+    ],
+    "defaults": {
+      "matched": [
+        "cream-ground"
+      ]
+    }
+  },
+  "derived": [
+    {
+      "file": "card.png",
+      "requires": [
+        "logo",
+        "type",
+        "palette"
+      ],
+      "inputs_sha256": "acce9ab9a634bed577effc4dfd39a25fc70956f3d021776eb3d0589880108aa1"
+    }
+  ]
+}
